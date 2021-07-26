@@ -8,12 +8,22 @@
  * @returns List of groups with a new prop skills
  */
 
+import { group } from "console";
+
 // ↓ uncomment bellow lines and add your response!
-/*
-export default function ({ groups }: { groups: Group[] }): GroupWithSills[] {
-    return [];
-}
-*/
+// export default function ({ groups }: { groups: Group[] }): GroupWithSills[] {
+//     return groups.map((gr:Group):GroupWithSills => {
+//         let skills:string[] = [];
+//         gr.students.forEach((student) => {
+//             skills = [...skills, ...student.skills];
+//         });
+
+//         skills.sort();
+
+//         const myGroup:GroupWithSills = {...gr, skills: Array.from(new Set(skills))}
+//         return myGroup;
+//     })
+// }
 
 // used interfaces, do not touch
 interface Student {
@@ -25,6 +35,7 @@ interface Student {
 export interface Group {
     students: Student[];
     name: string;
+    skills: string[]
 }
 
 export interface GroupWithSills extends Group {

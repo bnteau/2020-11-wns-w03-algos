@@ -7,11 +7,16 @@
  */
 
 // ↓ uncomment bellow lines and add your response!
-/*
-export default function ({ students }: { students: Student[] }): Student[] {
-    return [];
-}
-*/
+// export default function ({ students }: { students: Student[] }): Student[] {
+//     const sorted = students.sort((s1, s2):any => {
+//         if (s1.age === s2.age) {
+//             return s1.name > s2.name ? 1 : -1;
+//         } else {
+//             return s1.age - s2.age;
+//         }
+//     });
+//     return sorted;
+// }
 
 // used interfaces, do not touch
 export interface Student {

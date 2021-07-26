@@ -7,11 +7,20 @@
  */
 
 // ↓ uncomment bellow lines and add your response!
-/*
+
 export default function ({ events }: { events: EventWithCategory[] }): string[] {
-    return [];
+    const cats:any = [];
+    events.map((event) => {
+        const { categories } = event;
+        categories.map((cat:string) => {
+            if(!cats.includes(cat)) {
+                cats.push(cat);
+            }
+        })
+    })
+    return cats.sort();
 }
-*/
+
 
 // used interfaces, do not touch
 export interface EventWithCategory {
